@@ -2,7 +2,6 @@ import { getInitialData } from '../utils/api'
 import { receiveUsers } from '../actions/users'
 import { receivePolls } from '../actions/polls'
 import { setAuthedUser} from '../actions/authedUser'
-import { dispatch } from 'rxjs/internal/observable/range';
 
 const AUTHED_ID = 'tylermcginnis'
 
