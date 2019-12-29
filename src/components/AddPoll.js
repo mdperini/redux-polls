@@ -38,7 +38,7 @@ export default class AddPoll extends Component {
                 <input
                     value={question}
                     onChange={this.handleInputChange}
-                    name={question}
+                    name='question'
                     className='input'
                     type='text'
                 />
@@ -49,7 +49,7 @@ export default class AddPoll extends Component {
                 <input
                     value={a}
                     onChange={this.handleInputChange}
-                    name={a}
+                    name='a'
                     className='input'
                     id='a'
                     type='text'
@@ -59,7 +59,7 @@ export default class AddPoll extends Component {
                 <input
                     value={b}
                     onChange={this.handleInputChange}
-                    name={b}
+                    name='b'
                     className='input'
                     id='b'
                     type='text'
@@ -69,7 +69,7 @@ export default class AddPoll extends Component {
                 <input
                     value={c}
                     onChange={this.handleInputChange}
-                    name={c}
+                    name='c'
                     className='input'
                     id='c'
                     type='text'
@@ -79,7 +79,7 @@ export default class AddPoll extends Component {
                 <input
                     value={d}
                     onChange={this.handleInputChange}
-                    name={d}
+                    name='d'
                     className='input'
                     id='d'
                     type='text'
