@@ -39,7 +39,7 @@ class Poll extends Component {
                         const count = poll[key[0] + 'Votes'].length
                         
                         return (
-                            <li
+                            <li key={key}
                             onClick={() => {
                                 if (vote === null && !this.answered) {
                                     this.handleAnswer(key[0])
