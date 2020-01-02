@@ -87,7 +87,7 @@ class AddPoll extends Component {
                     type='text'
                 />
 
-                <button className='btn' type='submit' disabled={this.disabled}>
+                <button className='btn' type='submit' disabled={this.isDisable()}>
                     Submit
                 </button>
             </form>
