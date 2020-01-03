@@ -32,26 +32,27 @@ class Poll extends Component {
                     {poll.quuestion}
                 </h1>
                 <div className='poll-author'>
-                    By <img src={authorAvatar} alt='Author;s avatar' />
+                    By <img src={authorAvatar} alt="Author's avatar" />
                 </div>
                 <ul>
                     {['aText', 'bText', 'cText', 'dText',].map((key) => {
                         const count = poll[key[0] + 'Votes'].length
                         
                         return (
-                            <li key={key}
-                            onClick={() => {
-                                if (vote === null && !this.answered) {
-                                    this.handleAnswer(key[0])
-                                }
-                            }}
-                            className={`option ${vote === key[0] ? 'chosen' : '' }`}>
-                                {vote === null
-                                 ? poll[key]
-                                 : <div className='result'>
-                                     <span>{poll[key]}</span>
-                                     <span>{getPercentage(count, totalVotes)}% ({count})</span>
-                                 </div>}
+                            <li 
+                                key={key}
+                                onClick={() => {
+                                    if (vote === null && !this.answered) {
+                                        this.handleAnswer(key[0])
+                                    }
+                                }}
+                                className={`option ${vote === key[0] ? 'chosen' : '' }`}>
+                                    {vote === null
+                                    ? poll[key]
+                                    : <div className='result'>
+                                        <span>{poll[key]}</span>
+                                        <span>{getPercentage(count, totalVotes)}% ({count})</span>
+                                    </div>}
                             </li>
                         )
                     })}
