@@ -1,7 +1,7 @@
 import { RECEIVE_POLLS, ADD_POLL } from '../actions/polls'
 import { ADD_ANSWER} from '../actions/answers'
 
-const polls = (state={}, action) => {
+export default function polls (state={}, action) {
     switch(action.type) {
         case RECEIVE_POLLS:
             return {
@@ -29,5 +29,3 @@ const polls = (state={}, action) => {
             return state
     }
 }
-
-export default polls

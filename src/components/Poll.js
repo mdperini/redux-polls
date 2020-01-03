@@ -29,10 +29,10 @@ class Poll extends Component {
         return (
             <div className='poll-container'>
                 <h1 className='question'>
-                    {poll.quuestion}
+                    {poll.question}
                 </h1>
                 <div className='poll-author'>
-                    By <img src={authorAvatar} alt='Author;s avatar' />
+                    By <img src={authorAvatar} alt="Author's avatar" />
                 </div>
                 <ul>
                     {['aText', 'bText', 'cText', 'dText',].map((key) => {
@@ -40,6 +40,7 @@ class Poll extends Component {
                         
                         return (
                             <li
+                             key={key}
                             onClick={() => {
                                 if (vote === null && !this.answered) {
                                     this.handleAnswer(key[0])
