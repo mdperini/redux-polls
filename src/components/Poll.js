@@ -28,7 +28,7 @@ class Poll extends Component {
                     {poll.quuestion}
                 </h1>
                 <div className='poll-author'>
-                    By <img src={authorAvatar} alter='Author;s avatar' />
+                    By <img src={authorAvatar} alt="Author's avatar" />
                 </div>
                 <ul>
                     {['aText', 'bText', 'cText', 'dText',].map((key) => {
